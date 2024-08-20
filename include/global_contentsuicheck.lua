@@ -1,0 +1,4 @@
+_ContentsUiCheck_FairyIconOpenLevel = 53
+_ContentsUiCheck_TagIconOpenLevel = 56
+_ContentsUiCheck_TotalRewardIconEffectLevel = 50
+_ContentsUiCheck_SeasonUiSelectOpenLevel = 10

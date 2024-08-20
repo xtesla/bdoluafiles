@@ -1,0 +1,30 @@
+function PaGlobal_ColorPalette_All_Open(classType, paramType, paramIndex)
+  PaGlobal_ColorPalette_All:prepareOpen(classType, paramType, paramIndex)
+end
+function PaGlobal_ColorPalette_All_Close()
+  PaGlobal_ColorPalette_All:prepareClose()
+end
+function PaGlobal_ColorPalette_All_SetDecorationPart(classType, paramType, paramIndex)
+  PaGlobal_ColorPalette_All:setDecorationPart(classType, paramType, paramIndex)
+end
+function HandleEventLPress_ColorPalette_All_PanelPressed(panelType)
+  PaGlobal_ColorPalette_All:panelPressed(panelType)
+end
+function HandleEventLUp_ColorPalette_All_PanelReleased(panelType)
+  PaGlobal_ColorPalette_All:panelReleased(panelType)
+end
+function HandleEventKey_ColorPalette_All_ApplyDecoration(colorType)
+  PaGlobal_ColorPalette_All:applyEditBoxRGBToCharacter(colorType)
+end
+function FromClient_ColorPalette_All_ReSizePanel()
+  Panel_Window_ColorPalette_All:ComputePos()
+end
+function FromClient_ColorPalette_All_EditBoxChanged(colorType)
+  PaGlobal_ColorPalette_All:editBoxChanged(colorType)
+end
+function FromClient_ColorPalette_All_EventRGBInfoCleared()
+  PaGlobal_ColorPalette_All:lastAppliedRGBInformationClear()
+end
+function FromClient_ColorPalette_All_EventRGBHistoryApplied(paramIndex, colorInfo)
+  PaGlobal_ColorPalette_All:rgbHistoryApplied(paramIndex, colorInfo)
+end
